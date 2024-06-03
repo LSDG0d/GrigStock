@@ -389,5 +389,158 @@ namespace GrigStock.Forms
         {
             AdminForm_Load(sender, EventArgs.Empty);
         }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (textBoxSearchProviders.Text == string.Empty || textBoxSearchProviders.Text == null)
+                {
+                    dataGridViewProviders.DataSource = zxc.Providers.ToList();
+                }
+                else
+                {
+                    string searchWord = textBoxSearchProviders.Text;
+                    dataGridViewProviders.DataSource = zxc.Providers.Where(x => x.ProviderContact.Contains(searchWord)
+                    || x.ProviderMail.Contains(searchWord) || x.ProviderPhone.Contains(searchWord) || x.ProviderName.Contains(searchWord)).ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (textBoxTypes.Text == string.Empty || textBoxTypes.Text == null)
+                {
+                    dataGridViewTypes.DataSource = zxc.Types.ToList();
+                }
+                else
+                {
+                    string searchWord = textBoxTypes.Text;
+                    dataGridViewTypes.DataSource = zxc.Types.Where(x => x.TypeCategory.Contains(searchWord)
+                    || x.TypeDescription.Contains(searchWord) || x.TypeCategory.Contains(searchWord) || x.TypeId.ToString().Contains(searchWord)).ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (textBoxTovars.Text == string.Empty || textBoxTovars.Text == null)
+                {
+                    dataGridViewTovars.DataSource = zxc.Tovars.ToList();
+                }
+                else
+                {
+                    string searchWord = textBoxTovars.Text;
+                    dataGridViewTovars.DataSource = zxc.Tovars.Where(x => x.TovarName.Contains(searchWord)
+                    || x.TovarDescription.Contains(searchWord) || x.TovarCount.ToString().Contains(searchWord) || x.TovarCost.ToString().Contains(searchWord)).ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (textBoxOrders.Text == string.Empty || textBoxOrders.Text == null)
+                {
+                    dataGridViewOrders.DataSource = zxc.Orders.ToList();
+                }
+                else
+                {
+                    string searchWord = textBoxOrders.Text;
+                    dataGridViewOrders.DataSource = zxc.Orders.Where(x => x.ShippingDate.ToString().Contains(searchWord)
+                    || x.RecipientAddress.ToString().Contains(searchWord) || x.Recipient.ToString().Contains(searchWord)
+                    || x.PaymentDate.ToString().Contains(searchWord) || x.ClientId.ToString().Contains(searchWord)).ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (textBoxEmployee.Text == string.Empty || textBoxEmployee.Text == null)
+                {
+                    dataGridViewEmployees.DataSource = zxc.Employees.ToList();
+                }
+                else
+                {
+                    string searchWord = textBoxEmployee.Text;
+                    dataGridViewEmployees.DataSource = zxc.Employees.Where(x => x.EmployeeAddress.ToString().Contains(searchWord)
+                    || x.EmployeeBirthDay.ToString().Contains(searchWord) || x.EmployeeFirstName.ToString().Contains(searchWord)
+                    || x.EmployeeId.ToString().Contains(searchWord) || x.EmployeeJobTitle.ToString().Contains(searchWord)
+                    || x.EmployeeLastName.ToString().Contains(searchWord) || x.EmployeeMail.ToString().Contains(searchWord)).ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (textBoxClients.Text == string.Empty || textBoxClients.Text == null)
+                {
+                    dataGridViewClients.DataSource = zxc.Clients.ToList();
+                }
+                else
+                {
+                    string searchWord = textBoxClients.Text;
+                    dataGridViewClients.DataSource = zxc.Clients.Where(x => x.ClientAddress.ToString().Contains(searchWord)
+                    || x.ClientContact.ToString().Contains(searchWord) || x.ClientDescription.ToString().Contains(searchWord)
+                    || x.ClientId.ToString().Contains(searchWord) || x.ClientMail.ToString().Contains(searchWord)
+                    || x.ClientName.ToString().Contains(searchWord) || x.ClientPhone.ToString().Contains(searchWord)).ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (textBoxUsers.Text == string.Empty || textBoxUsers.Text == null)
+                {
+                    dataGridViewUser.DataSource = zxc.Users.ToList();
+                }
+                else
+                {
+                    string searchWord = textBoxUsers.Text;
+                    dataGridViewUser.DataSource = zxc.Users.Where(x => x.UserPassword.ToString().Contains(searchWord)
+                    || x.UserRole.ToString().Contains(searchWord) || x.UserLogin.ToString().Contains(searchWord)
+                    || x.UserId.ToString().Contains(searchWord)).ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

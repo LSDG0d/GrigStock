@@ -44,10 +44,10 @@
             linkLabel1.Location = new Point(53, 142);
             linkLabel1.Margin = new Padding(4, 0, 4, 0);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(52, 23);
+            linkLabel1.Size = new Size(57, 23);
             linkLabel1.TabIndex = 10;
             linkLabel1.TabStop = true;
-            linkLabel1.Text = "Login";
+            linkLabel1.Text = "Войти";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // button1
@@ -57,7 +57,7 @@
             button1.Name = "button1";
             button1.Size = new Size(134, 52);
             button1.TabIndex = 9;
-            button1.Text = "Register";
+            button1.Text = "Регистрация";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -80,12 +80,12 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(14, 51);
+            label2.Location = new Point(26, 51);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(86, 23);
+            label2.Size = new Size(75, 23);
             label2.TabIndex = 5;
-            label2.Text = "Password:";
+            label2.Text = "Пароль:";
             // 
             // label1
             // 
@@ -93,9 +93,9 @@
             label1.Location = new Point(44, 20);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(56, 23);
+            label1.Size = new Size(63, 23);
             label1.TabIndex = 6;
-            label1.Text = "Login:";
+            label1.Text = "Логин:";
             // 
             // label3
             // 
@@ -103,9 +103,9 @@
             label3.Location = new Point(53, 88);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(48, 23);
+            label3.Size = new Size(52, 23);
             label3.TabIndex = 12;
-            label3.Text = "Role:";
+            label3.Text = "Роль:";
             // 
             // comboBoxRole
             // 
@@ -134,7 +134,7 @@
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Margin = new Padding(4, 3, 4, 3);
             Name = "RegistrationForm";
-            Text = "RegistrationForm";
+            Text = "Регистрация";
             Load += RegistrationForm_Load;
             ResumeLayout(false);
             PerformLayout();

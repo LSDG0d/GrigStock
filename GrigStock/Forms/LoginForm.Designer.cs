@@ -43,18 +43,18 @@ namespace GrigStock
             label1.AutoSize = true;
             label1.Location = new Point(48, 18);
             label1.Name = "label1";
-            label1.Size = new Size(68, 28);
+            label1.Size = new Size(75, 28);
             label1.TabIndex = 0;
-            label1.Text = "Login:";
+            label1.Text = "Логин:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(14, 58);
+            label2.Location = new Point(28, 58);
             label2.Name = "label2";
-            label2.Size = new Size(102, 28);
+            label2.Size = new Size(88, 28);
             label2.TabIndex = 0;
-            label2.Text = "Password:";
+            label2.Text = "Пароль:";
             // 
             // textBoxLogin
             // 
@@ -76,7 +76,7 @@ namespace GrigStock
             button1.Name = "button1";
             button1.Size = new Size(107, 45);
             button1.TabIndex = 3;
-            button1.Text = "Login";
+            button1.Text = "Вход";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -85,10 +85,10 @@ namespace GrigStock
             linkLabel1.AutoSize = true;
             linkLabel1.Location = new Point(14, 121);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(120, 28);
+            linkLabel1.Size = new Size(129, 28);
             linkLabel1.TabIndex = 4;
             linkLabel1.TabStop = true;
-            linkLabel1.Text = "Registration";
+            linkLabel1.Text = "Регистрация";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // LoginForm
@@ -106,7 +106,7 @@ namespace GrigStock
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Margin = new Padding(4);
             Name = "LoginForm";
-            Text = "LoginForm";
+            Text = "Вход";
             ResumeLayout(false);
             PerformLayout();
         }
