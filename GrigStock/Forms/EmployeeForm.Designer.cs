@@ -103,6 +103,7 @@
             button12 = new Button();
             button13 = new Button();
             dataGridViewProviders = new DataGridView();
+            button19 = new Button();
             tabControl1.SuspendLayout();
             tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewClients).BeginInit();
@@ -132,7 +133,7 @@
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(700, 392);
+            tabControl1.Size = new Size(700, 399);
             tabControl1.TabIndex = 1;
             tabControl1.MouseClick += tabControl1_MouseClick;
             // 
@@ -245,9 +246,9 @@
             tabPage3.Controls.Add(button4);
             tabPage3.Controls.Add(button5);
             tabPage3.Controls.Add(dataGridViewEmployees);
-            tabPage3.Location = new Point(4, 32);
+            tabPage3.Location = new Point(4, 29);
             tabPage3.Name = "tabPage3";
-            tabPage3.Size = new Size(692, 356);
+            tabPage3.Size = new Size(692, 359);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Сотрудники";
             tabPage3.UseVisualStyleBackColor = true;
@@ -377,6 +378,7 @@
             // 
             // tabPage4
             // 
+            tabPage4.Controls.Add(button19);
             tabPage4.Controls.Add(button15);
             tabPage4.Controls.Add(textBoxOrders);
             tabPage4.Controls.Add(label3);
@@ -393,7 +395,7 @@
             tabPage4.Controls.Add(dataGridViewOrders);
             tabPage4.Location = new Point(4, 32);
             tabPage4.Name = "tabPage4";
-            tabPage4.Size = new Size(692, 356);
+            tabPage4.Size = new Size(692, 363);
             tabPage4.TabIndex = 3;
             tabPage4.Text = "Заказы";
             tabPage4.UseVisualStyleBackColor = true;
@@ -797,9 +799,9 @@
             tabPage7.Controls.Add(button12);
             tabPage7.Controls.Add(button13);
             tabPage7.Controls.Add(dataGridViewProviders);
-            tabPage7.Location = new Point(4, 32);
+            tabPage7.Location = new Point(4, 29);
             tabPage7.Name = "tabPage7";
-            tabPage7.Size = new Size(692, 356);
+            tabPage7.Size = new Size(692, 359);
             tabPage7.TabIndex = 6;
             tabPage7.Text = "Поставщики";
             tabPage7.UseVisualStyleBackColor = true;
@@ -879,11 +881,21 @@
             dataGridViewProviders.CellContentClick += dataGridViewProviders_CellContentClick;
             dataGridViewProviders.CellEndEdit += dataGridViewProviders_CellEndEdit;
             // 
+            // button19
+            // 
+            button19.Location = new Point(8, 331);
+            button19.Name = "button19";
+            button19.Size = new Size(256, 29);
+            button19.TabIndex = 34;
+            button19.Text = "Отчёт";
+            button19.UseVisualStyleBackColor = true;
+            button19.Click += button19_Click;
+            // 
             // EmployeeForm
             // 
             AutoScaleDimensions = new SizeF(10F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 392);
+            ClientSize = new Size(700, 399);
             Controls.Add(tabControl1);
             Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
@@ -992,5 +1004,6 @@
         private Button button18;
         private TextBox textBoxSearchProviders;
         private Label label22;
+        private Button button19;
     }
 }

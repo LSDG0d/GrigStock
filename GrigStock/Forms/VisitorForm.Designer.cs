@@ -53,6 +53,7 @@
             textBoxSearchProviders = new TextBox();
             button5 = new Button();
             dataGridViewProviders = new DataGridView();
+            button6 = new Button();
             tabControl1.SuspendLayout();
             tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewClients).BeginInit();
@@ -166,21 +167,22 @@
             // 
             // tabPage4
             // 
+            tabPage4.Controls.Add(button6);
             tabPage4.Controls.Add(textBoxOrders);
             tabPage4.Controls.Add(buttonSearchOrders);
             tabPage4.Controls.Add(dataGridViewOrders);
-            tabPage4.Location = new Point(4, 29);
+            tabPage4.Location = new Point(4, 32);
             tabPage4.Name = "tabPage4";
-            tabPage4.Size = new Size(688, 358);
+            tabPage4.Size = new Size(688, 355);
             tabPage4.TabIndex = 3;
             tabPage4.Text = "Заказы";
             tabPage4.UseVisualStyleBackColor = true;
             // 
             // textBoxOrders
             // 
-            textBoxOrders.Location = new Point(8, 317);
+            textBoxOrders.Location = new Point(159, 317);
             textBoxOrders.Name = "textBoxOrders";
-            textBoxOrders.Size = new Size(572, 30);
+            textBoxOrders.Size = new Size(421, 30);
             textBoxOrders.TabIndex = 7;
             // 
             // buttonSearchOrders
@@ -324,6 +326,16 @@
             dataGridViewProviders.Size = new Size(688, 320);
             dataGridViewProviders.TabIndex = 1;
             // 
+            // button6
+            // 
+            button6.Location = new Point(3, 318);
+            button6.Name = "button6";
+            button6.Size = new Size(150, 29);
+            button6.TabIndex = 8;
+            button6.Text = "Отчёт";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
             // VisitorForm
             // 
             AutoScaleDimensions = new SizeF(10F, 23F);
@@ -385,5 +397,6 @@
         private TextBox textBoxOrders;
         private TextBox textBoxEmployee;
         private TextBox textBoxClients;
+        private Button button6;
     }
 }

@@ -159,5 +159,11 @@ namespace GrigStock.Forms
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            OtchetForm otchetForm = new OtchetForm();
+            otchetForm.Show();
+        }
     }
 }

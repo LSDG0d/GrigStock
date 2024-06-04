@@ -294,10 +294,10 @@
             tabPage2.Controls.Add(button2);
             tabPage2.Controls.Add(button3);
             tabPage2.Controls.Add(dataGridViewClients);
-            tabPage2.Location = new Point(4, 32);
+            tabPage2.Location = new Point(4, 29);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(687, 367);
+            tabPage2.Size = new Size(687, 370);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Клиенты";
             tabPage2.UseVisualStyleBackColor = true;
